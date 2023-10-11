@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    /* font-size: 1.5vw;
+    font-weight: 500; */
+}
+
+.image {
+    height: 15vw;
+    width: 15vw;
+}
+
+.poster img {
+    height: 30vw;
+    width: 30vw;
+}
+
+.products {
+    max-width: 100vw;
+    padding: 2vw 3vw;
+    margin: 0 2vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5vw;
+
+}
+
+.ham-burger{
+    display: none;
+}
+
+.product {
+    /* border: 1px solid black; */
+    padding: 2vw 2vw;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    background-color: aliceblue;
+}
+
+.description {
+    display: none;
+}
+
+/* ***************** */
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(228, 228, 244);
+}
+.navbar{
+    height: 50vw;
+    width:100%;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(228, 228, 244);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1vw 3vw;
+}
+
+
+.lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+/* ********************* */
+.poster {
+    height: 35vw;
+    width: 100%;
+    padding: 0 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.poster_info {
+    padding: 5vw 0;
+}
+
+.poster_info>p {
+    margin: 5px 0;
+}
+
+/* ********************** */
+.pages {
+    max-width: 100vw;
+    padding: 2vw 3vw;
+    margin: 0 2vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5vw;
+
+}
+
+.page {
+    /* border: 1px solid black; */
+    padding: 2vw 2vw;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+    background-color: aliceblue;
+}
+
+.image {
+    height: 15vw;
+    width: 15vw;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .main {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(228, 228, 244);
+    }
+    .navbar{
+        width: 100%;
+    }
+    /* .nav {
+        display: flex;
+        flex-direction: column;
+        height: 15vw;
+        width: 100%;
+    } */
+    .lists{
+        display: none;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .poster_info{
+        padding: 0 3vw;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        align-items: center;
+    }
+    .ham-burger{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .main {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(228, 228, 244);
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .lists{
+        display: none;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .poster{
+        display: flex;
+        flex-direction: column;
+        height: 15vw;
+        width: 100%;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 30vw;
+        width: 100%;
+        align-items: center;
+        gap: 10vw;
+    }
+    .ham-burger{
+        display: block;
+    }
+}
